@@ -27,7 +27,7 @@ export_string = "";
 file_names.each do |file_name|
   # Get the name of the file and the extension separately
   file_name_without_ext = file_name.split(".")[0]
-	file_ext = file_name.split(".")[1];
+  file_ext = file_name.split(".")[1];
 	
   # Skip non-png files, and the files with @ in the name
   next if file_ext != FILE_TYPE || file_name_without_ext.include?("@")
